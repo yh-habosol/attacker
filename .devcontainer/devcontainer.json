@@ -3,10 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "runArgs": [
-    "--init"
-  ],
-  "postCreateCommand": "chmod +x /entrypoint.sh && /entrypoint.sh",
-  "remoteUser": "-oProxyCommand=\"echo hacked\" #"
+  "remoteUser": "malicious",
+  "postCreateCommand": "chmod +x /entrypoint.sh && /entrypoint.sh"
 }
 
